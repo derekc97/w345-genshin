@@ -16,7 +16,7 @@ const api_url = "https://api.genshin.dev/";
             for (let i = 0; i < charList.length; i++) {
                 let name = charList[i];
 
-                let picLink = "https://api.genshin.dev/characters/" + charList[i] + "/icon";
+                let picLink = "https://api.genshin.dev/characters/" + charList[i] + "/gacha-card";
                 
                 //replaces dead icon links with icon-big
                 if (name == "collei" || name == "kuki-shinobu" || name == "shikanoin-heizou" || name == "tighnari") {
@@ -24,15 +24,18 @@ const api_url = "https://api.genshin.dev/";
                 }
 
                 console.log(picLink);
+                let charCard = document.createElement("div");
                 let img = document.createElement("img");
                 img.src = picLink;
-                img.style.height = "50px";
-                img.style.width = "50px";
-                charGrid.appendChild(img);
+                img.style.height = "100%";
+                img.style.width = "100%";
+                charCard.appendChild(img);
+                charGrid.appendChild(charCard);
 
                 let charName = document.createElement("h3");
                 
                 charName.textContent = upperCase(name);
+                charCard.appendChild(charName);
                 // charGrid.appendChild(charName);
                 charName.style.fontFamily = "Helvetica";
                 charName.style.fontSize = "10px";
