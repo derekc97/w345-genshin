@@ -29,6 +29,10 @@
     cursor: pointer;   
 }
 
+.header-child:hover {
+    text-decoration: underline;
+}
+
 .header-child > a {
     text-decoration: none;
     color: white;
@@ -36,6 +40,12 @@
 
 .logo {
     flex: 5;
+    display: flex;
+    justify-content: left;
+}
+
+.logo > div > img {
+    height: 50px;
 }
 
 .character-container, .weapon-container {
@@ -78,6 +88,7 @@
 }
 
 @media screen and (max-width: 1000px) {
+
     .character-container {
         padding-left: 10px;
         padding-right: 10px;
