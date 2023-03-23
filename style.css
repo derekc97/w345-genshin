@@ -9,6 +9,8 @@
     padding-right: 100px;
 } */
 
+
+
 .header {
     display: flex;
     flex-direction: row;
@@ -85,6 +87,79 @@
 .character-grid > div:hover {
     opacity: 0.2;
     filter: saturate(0.5);
+}
+
+.home-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px
+}
+
+.hero-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+.hero-image > img {
+    width: 75%;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.explain-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.explain-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px
+}
+
+.explain-text {
+    font-size: 25px;
+}
+
+.explain-img {
+    display: flex;
+    justify-content: center;
+}
+
+.explain-img > img {
+    width: 90%;
+}
+
+.what-is-container {
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1000px) {
